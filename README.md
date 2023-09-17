@@ -1,2 +1,3 @@
 # bedroomOnline
-This is a graphics interface to consume parameters about my bedroom. Even information publish here is came from raspberry (running the back-end server) that send infomation to a google spreedsheet via google app script. 
+
+This is a graphical interface for accessing information related to my bedroom's parameters. All the information presented here originates from a Raspberry Pi (which is running the back-end server) and sends data to a Google Spreadsheet via a Google Apps Script.
