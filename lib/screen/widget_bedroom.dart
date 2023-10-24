@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:bedroom_online/screen/widget_temperatura.dart';
 
 final backgroundColor = Colors.grey[200];
 
@@ -33,9 +32,25 @@ class BedroomScreen extends StatelessWidget {
           // Espaço 1
           Container(
             height: 100, // Altura do primeiro bloco de espaço
-            color: Colors.white, // Cor do bloco de espaço
-            child: Center(
-              child: Text('Espaço 1'),
+            color: Colors.red, // Cor do bloco de espaço
+            child: const Center(
+              child: Card(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    ListTile(
+                      leading: Icon(Icons.hotel),
+                      title: Text(
+                        'Temperatura',
+                        style: TextStyle(
+                          fontSize: 24, // Adjust the font size as needed
+                        ),
+                      ),
+                      subtitle: Text('23ºC'),
+                    ),
+                  ],
+                ),
+              ),
             ),
           ),
 
@@ -43,24 +58,23 @@ class BedroomScreen extends StatelessWidget {
           Container(
             height: 100, // Altura do segundo bloco de espaço
             color: Colors.blue, // Cor do bloco de espaço
-            child: Center(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: <Widget>[
-                  Container(
-                    width: 100,
-                    height: 80,
-                    color: Colors.red,
-                    // Conteúdo do bloco 1
-                  ),
-                  SizedBox(width: 20), // Espaçamento entre os blocos
-                  Container(
-                    width: 100,
-                    height: 80,
-                    color: Colors.yellow,
-                    // Conteúdo do bloco 2
-                  ),
-                ],
+            child: const Center(
+              child: Card(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    ListTile(
+                      leading: Icon(Icons.hotel),
+                      title: Text(
+                        'Umidade',
+                        style: TextStyle(
+                          fontSize: 24, // Adjust the font size as needed
+                        ),
+                      ),
+                      subtitle: Text('90%'),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
@@ -69,8 +83,44 @@ class BedroomScreen extends StatelessWidget {
           Container(
             height: 100, // Altura do terceiro bloco de espaço
             color: Colors.green, // Cor do bloco de espaço
-            child: Center(
-              child: Text('Espaço 3'),
+            child: const Card(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  ListTile(
+                    leading: Icon(Icons.hotel),
+                    title: Text(
+                      'Porta aberta',
+                      style: TextStyle(
+                        fontSize: 24, // Adjust the font size as needed
+                      ),
+                    ),
+                    subtitle: Text('Sim'),
+                  ),
+                ],
+              ),
+            ),
+          ),
+
+          Container(
+            height: 100, // Altura do terceiro bloco de espaço
+            color: Colors.purple, // Cor do bloco de espaço
+            child: const Card(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  ListTile(
+                    leading: Icon(Icons.hotel),
+                    title: Text(
+                      'Barulho',
+                      style: TextStyle(
+                        fontSize: 24, // Adjust the font size as needed
+                      ),
+                    ),
+                    subtitle: Text('64 dB'),
+                  ),
+                ],
+              ),
             ),
           ),
         ],
